@@ -1,0 +1,382 @@
+@charset "UTF-8";
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-size: 15px;
+	line-height: 21px;
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	background-image: url(../image/background.png);
+}
+
+h1#recruit{
+	font-size: 24px;
+	font-weight:bold;
+	margin: 80px 10px 30px;
+	padding: 10px 15px 10px;
+	border-left: 10px solid #ffb4b4;
+	border-radius: 0px 20px 20px 0px ;
+	background-color: #ff1b1b;
+	color: #FFFFFF;
+}
+
+h2{
+}
+
+h3{
+}
+
+ul {
+}
+
+li {
+}
+
+
+
+/*ラッパー（HPを囲むブロック）
+---------------------------------------------------------------------------*/
+#wrapper {
+	width: 980px;
+	margin:0 auto;
+	text-decoration: none;
+	background-color:#FFFFF1;
+	box-shadow:0px 0px 5px #aaa;
+}
+
+
+
+/*ヘッダー（サイト名ロゴとメイン写真が入っているブロック）
+---------------------------------------------------------------------------*/
+#header {
+	padding:30px;
+}
+
+#header img {
+	border:0;
+}
+
+
+
+/*ナビゲーションバー
+---------------------------------------------------------------------------*/
+#navbar{
+	height:50px;
+}
+
+#navbar ul{
+	padding:5px;
+}
+
+#navbar li{
+	float:left;
+	width:125px;
+	list-style-type:none;
+	padding:6px;
+	text-align: center;
+} 
+
+#navbar li a {
+	text-decoration:none;
+	display:block;
+	padding:5px 0;
+
+	background-color: #ffffea;
+	box-shadow:1px 1px 2px #aaa;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px; 
+	border-radius:5px 5px 5px 5px;
+}
+
+#navbar li a:link {
+}
+
+#navbar li a:visited {
+}
+
+#navbar li a:hover {
+	background-color: #ffffaa;
+}
+
+#navbar li a:active {
+	background-color: #ffff66;
+}
+
+#navbar li img{
+	border:0;
+}
+
+
+
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+#contents {
+	padding:20px;
+	width: 940px;
+	margin:0 auto;
+}
+
+#contents img{
+	margin:0 auto;
+}
+
+#contents p{
+	font-size: 15px;
+	padding:2px;
+	margin:0px 20px;
+	line-height: 1.8;
+}
+
+
+
+/*ライブ情報
+---------------------------------------------------------------------------*/
+h2#liveinfo  {
+  position: relative;
+  color: #000;
+  background: #ffbbb5;
+  font-size: 18px;
+  line-height: 1;
+  margin: 10px 70px 10px 30px;
+  padding: 9px 0px 9px 50px;
+  border-radius: 22px 0 0 22px;
+}
+h2#liveinfo:before  {
+  content: "";
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  left: 14px;
+  margin-top :-8px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px #777 inset;
+}
+h2#liveinfo:after  {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  height: 0;
+  width: 0;
+  border: 18px solid #ffbbb5;
+
+  border-right-color: transparent;
+}
+
+h3#liveinfo {
+	font-weight:normal;
+	margin:20px 40px 10px 40px;
+}
+
+#liveplay {
+	margin-right :50px;
+	margin-left :50px;
+	padding: 0px;
+	border-spacing: 80px;
+}
+
+#liveplay .taplay {
+	border-spacing: 4px;
+}
+
+#liveplay .taplay td{
+	margin :12px;
+	padding :4px 12px 4px 12px;
+}
+
+#liveplay .taplay tr:nth-child(odd) {
+    background-color: #ffecce;
+}
+
+#liveplay .taplay tr:nth-child(even) {
+    background-color: #fff6e7;
+}
+
+#liveplay .taplay td:nth-child(1) {
+	font-size: 14px;
+    width: 14px;
+    text-align: right;
+    border-radius: 8px 0 0 8px;
+}
+
+#liveplay .taplay td:nth-child(2) {
+	font-size: 15px;
+    width: 540px;
+    border-radius: 0 8px 8px 0;
+}
+
+#liveplay .taplay td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+	font-size: 11px;
+	font-weight:bold;
+    width: 12px;
+    border-radius: 24px;
+    padding-left: -10px;
+    padding-right: -10px;
+    margin: 10px;
+}
+
+#liveplay .taplay td:nth-child(3) {
+	background-color: #ffecb4;
+}
+#liveplay .taplay td:nth-child(4) {
+	background-color: #ffe8a3;
+}
+#liveplay .taplay td:nth-child(5) {
+	background-color: #ffe492;
+}
+#liveplay .taplay td:nth-child(6) {
+	background-color: #ffe080;
+}
+
+
+
+
+
+/*フッター
+---------------------------------------------------------------------------*/
+#footer {
+	clear : both;
+	text-align:center;
+	color:#000000;
+	font-size: 15px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+#footer li {
+	display: inline;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-decoration:underline;
+}
+
+#footer a:link{
+	color:#000000;
+}
+
+#footer a:visited{
+	color:#000000;
+}
+
+#footer p{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-decoration:none
+}
+/*タブ*/
+.tab{overflow:hidden;}
+.tab li{background:#ccc; padding:5px 25px; float:left; margin-right:1px;font-size:1.2em; cursor:pointer}
+.tab li:hover {
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+  transform: scale(1.05,1.05);
+}
+.tab li.select{background:#fef4f4; cursor:pointer;}
+.hide {display:none;}
+.content{background: #fef4f4; padding:20px;}
+div#caldis{
+	text-align: right;
+}
+span#strong {
+    background: linear-gradient(transparent 40%, rgb(255, 170, 170) 40%);
+    font-size:1.2em;
+}
+
+/* ============================================================================================================================
+== OVAL SPEECH BUBBLE (more CSS3)
+** ============================================================================================================================ */
+
+.oval-speech {
+  position:relative;
+  width:270px;
+  padding:50px 40px;
+  margin:1em auto 50px;
+  text-align:center;
+  color:#fff;
+  background:#5a8f00;
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#b8db29), to(#5a8f00));
+  background:-moz-linear-gradient(#b8db29, #5a8f00);
+  background:-o-linear-gradient(#b8db29, #5a8f00);
+  background:linear-gradient(#b8db29, #5a8f00);
+  /*
+  NOTES:
+  -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
+  -webkit-border-radius:220px / 120px; // produces oval in chrome 4 (again!) but not supported in safari 4
+  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
+  */
+  -webkit-border-top-left-radius:220px 120px;
+  -webkit-border-top-right-radius:220px 120px;
+  -webkit-border-bottom-right-radius:220px 120px;
+  -webkit-border-bottom-left-radius:220px 120px;
+  -moz-border-radius:220px / 120px;
+  border-radius:220px / 120px;
+}
+
+.oval-speech p {font-size:1.25em;}
+
+/* creates part of the curve */
+.oval-speech:before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  bottom:-30px;
+  right:50%;
+  height:30px;
+  border-right:60px solid #5a8f00;
+  background:#5a8f00; /* need this for webkit - bug in handling of border-radius */
+  /* css3 */
+  -webkit-border-bottom-right-radius:80px 50px;
+  -moz-border-radius-bottomright:80px 50px;
+  border-bottom-right-radius:80px 50px;
+  /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+  -webkit-transform:translate(0, -2px);
+  -moz-transform:translate(0, -2px);
+  -ms-transform:translate(0, -2px);
+  -o-transform:translate(0, -2px);
+  transform:translate(0, -2px);
+}
+
+/* creates part of the curved pointy bit */
+.oval-speech:after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  bottom:-30px;
+  right:50%;
+  width:60px;
+  height:30px;
+  background:#fff;
+  /* css3 */
+  -webkit-border-bottom-right-radius:40px 50px;
+  -moz-border-radius-bottomright:40px 50px;
+  border-bottom-right-radius:40px 50px;
+  /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+  -webkit-transform:translate(-30px, -2px);
+  -moz-transform:translate(-30px, -2px);
+  -ms-transform:translate(-30px, -2px);
+  -o-transform:translate(-30px, -2px);
+  transform:translate(-30px, -2px);
+}
+
+div#discript{
+  background: #eee;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  transition: .3s;
+}
+.sns{
+  margin-right:30px;
+}
+#sns{
+  clear : both;
+  text-align:right;
+  padding-right:15px;
+  color:#000000;
+  font-size: 15px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
